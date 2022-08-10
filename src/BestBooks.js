@@ -11,7 +11,7 @@ class BestBooks extends React.Component {
   }
 
   getBooks = async () => {
-    const response = await axios.get( 'http://localhost:3001/books' );
+    const response = await axios.get( 'https://can-of-books-backend-la.herokuapp.com/' );
     this.setState( {
       books: response.data
     } );
